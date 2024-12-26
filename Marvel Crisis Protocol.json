@@ -1,0 +1,1916 @@
+{
+  "gameSystem": {
+    "name": "Marvel Crisis Protocol",
+    "id": "9c66-3ecf-4508-3b47",
+    "authorContact": "Uplink.MCP@gmail.com",
+    "authorName": "Uplink",
+    "battleScribeVersion": 2.03,
+    "readme": "*VERSION INFO*\nCore Rules: 05/2024 v1.1\nFAQ & Errata: 09/27/2024\nBase Sizes: 11/01/2024\nAffiliations: 11/01/2024\nBan/Restricted: 09/27/2024\nChallenger: 11/01/2024\n\n*UPDATES*\n- Updated to 11/01/2024 docs (w/ 11/08/2024 addendum).\n- Finalized Data for Gwenom, Electro, Sandman, Scarlet Spider, Vulture, Shocker, Silver Sable, Shang-Chi, Black Panther - Chosen of Bast, Namor the Sub-Mariner, Thor - Hero of Midgard, Loki - Prince of Lies, Lady Sif, The Mighty Thor, Sunspot, Warlock, Angel, Archangel, Apocalypse, Weapon X, Maverick, N'Kantu - The Living Mummy, Frankenstein's Monster, Werewolf By Night, Dracula, Mephisto, Abomination, and The Wrecking Crew.\n- Added Horsemen cards/mechanic to Apocalypse and Horsemen characters.\n- Added Print & Play One-Shot cards.\n- Added new terrain One-Shot cards.\n- Added 2024 Team Tactic Cards Errata.\n- Added P2P Data for Yondu, Elsa Bloodstone, Nova, and Man-Thing.\n- Added 07/2024 Green Goblin and Doctor Octopus Stat Card Updates.\n- Added Legion of the Lost, Thralls of Dracula, Servants of the Apocalypse affiliations.\n\n*DATAFILE REFERENCE*\n- Any entries listed as {Beta} are ones I do not own, have not seen in person, or which have not been officially published in AMG living documents (Rules / FAQ / etc.). Panel to Play (P2P) data is considered Beta.\n\n- All game symbols are in the format {SYMBOL}. ie. {PWR} = Power Symbol, {DMG} = Damage Symbol, etc. If you need clarification, add the \"Symbols Key\" found under \"Game Rules\" to your roster.\n\n- Restricted and Banned items will have {Restricted} or {Banned} after their name along with which Timeline the status applies for reference. Timeline specific Rosters and Squads will adhere to their Restricted and Banned lists and alert you if you are using items in excess of these rules. Open Play Rosters and Squads will not alert you or flag the items. Current restrictions can be found by adding the \"Timelines\" entry found under \"Game Rules\" to your roster.\n\n- All Force options under \"Game Rules\" are cheat sheets to add to your roster.\n\n- Grunts are listed in their own category and do not have a Threat cost. Model(s) required in your force to take specific Grunts are listed after the Grunt name in [  ]. If you receive a validation error that you are limited to (maximum 0) of a specific Grunt, you have not taken a required \"parent\" model.\n\n*****\n\nIf you find any incorrect data, please send correction requests to the address above. (Some grammatical errors are as they exist on the original cards pending errata.) If you would like CP pack numbers included in future updates as references for where to obtain cards and items, or Base Size info let me know.\n\n-Uplink",
+    "revision": 2402,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "A-Force", "id": "55c4-9af0-608a-49ab", "hidden": false},
+      {"name": "Affiliations", "id": "5f94-8af9-fd72-b919", "hidden": false},
+      {"name": "Asgard", "id": "a554-55ad-02b3-3342", "hidden": false},
+      {"name": "Avengers", "id": "d6c4-f011-cd8c-5451", "hidden": false},
+      {"name": "Banned - Timeline Extended", "id": "355f-6ff7-a74b-ef4e", "hidden": false},
+      {"name": "Banned - Timeline Standard", "id": "56eb-0892-4cc1-4962", "hidden": false},
+      {"name": "Black Order", "id": "01c6-f9aa-a521-8f23", "hidden": false},
+      {"name": "Brotherhood of Mutants", "id": "ece5-46c6-abdb-39d6", "hidden": false},
+      {"name": "Cabal", "id": "54a5-69c1-3540-3c6e", "hidden": false},
+      {"name": "Character", "id": "b2c6-4f4b-967e-2218", "hidden": false},
+      {"name": "Characters", "id": "5c80-c1cf-82bb-b5de", "hidden": false},
+      {"name": "Convocation", "id": "7105-a15e-f7d5-3af1", "hidden": false},
+      {"name": "Criminal Syndicate", "id": "62e3-8aa2-ed7a-9e44", "hidden": false},
+      {"name": "Crisis Cards", "id": "b9d7-42e4-5e93-7858", "hidden": false},
+      {"name": "Crisis - Extraction", "id": "67a0-a10a-a572-55c8", "hidden": false},
+      {"name": "Crisis - Secure", "id": "75ba-74ce-7452-509c", "hidden": false},
+      {"name": "Dark Dimension", "id": "73d9-28cf-a36e-9c84", "hidden": false},
+      {"name": "Defenders", "id": "65b9-6527-31f8-65c2", "hidden": false},
+      {"name": "Game Rules", "id": "c34e-b4ff-8bc1-6216", "hidden": false},
+      {"name": "Grunts", "id": "efe0-86c9-4b57-7046", "hidden": false},
+      {"name": "Guardians of the Galaxy", "id": "41a5-1f4b-b6f9-bf19", "hidden": false},
+      {"name": "Hellfire Club", "id": "b01b-7bc5-8696-16d1", "hidden": false},
+      {"name": "Hydra", "id": "a097-6b33-a91a-b908", "hidden": false},
+      {"name": "Infinity Gems", "id": "e7d2-fc4f-e67b-f877", "hidden": false},
+      {"name": "Inhumans", "id": "44ea-115a-c4be-377a", "hidden": false},
+      {"name": "Legion of the Lost", "id": "5f98-f675-ab4f-c0f1", "hidden": false},
+      {"name": "Midnight Sons", "id": "6a20-2f6b-5867-386a", "hidden": false},
+      {"name": "New Mutants", "id": "59df-b40d-0adf-aa62", "hidden": false},
+      {"name": "One-Shot", "id": "468e-df9e-6498-fdb6", "hidden": false},
+      {"name": "One-Shots", "id": "44de-652b-319c-1e49", "hidden": false},
+      {"name": "Restricted - Timeline Extended", "id": "37b0-7fc2-32e0-345f", "hidden": false},
+      {"name": "Restricted - Timeline Standard", "id": "3351-762c-1152-6a79", "hidden": false},
+      {"name": "S.H.I.E.L.D.", "id": "44da-2d91-089d-8aad", "hidden": false},
+      {"name": "Sentinels", "id": "00d3-7664-9c6d-2322", "hidden": false},
+      {"name": "Servants of the Apocalypse", "id": "ded4-2355-7f18-d961", "hidden": false},
+      {"name": "Servants of the Apocalypse - Death", "id": "1c2b-c4b6-d661-4cb4", "hidden": false},
+      {"name": "Servants of the Apocalypse - Famine", "id": "dfe6-d2d9-73d5-6e26", "hidden": false},
+      {"name": "Servants of the Apocalypse - Pestilence", "id": "5afe-4365-dc7c-ccf9", "hidden": false},
+      {"name": "Servants of the Apocalypse - War", "id": "d396-4f01-3cc3-98dd", "hidden": false},
+      {"name": "Set - City Crisis", "id": "c979-e2ae-244c-cb8b", "hidden": false},
+      {"name": "Set - City Gem", "id": "0e17-e603-4d9b-981f", "hidden": false},
+      {"name": "Set - City Tactic", "id": "45bd-7f44-9608-4abe", "hidden": false},
+      {"name": "Set - Flup Crisis", "id": "e5bc-27a3-d353-54a3", "hidden": false},
+      {"name": "Set - Flup Gem", "id": "46a3-b3fb-46ae-4a0e", "hidden": false},
+      {"name": "Set - Flup One-Shot", "id": "d78d-e36c-6eb0-ae3c", "hidden": false},
+      {"name": "Set - Flup Tactic", "id": "5702-4196-97f0-695a", "hidden": false},
+      {"name": "Set - Hammer Crisis", "id": "7cdf-3645-3a8a-067b", "hidden": false},
+      {"name": "Set - Hammer Gem", "id": "24e0-2c06-1601-09a4", "hidden": false},
+      {"name": "Set - Hammer Tactic", "id": "45e3-39e2-340b-9e14", "hidden": false},
+      {"name": "Set - Spidey Crisis", "id": "baa7-603b-44e2-95ac", "hidden": false},
+      {"name": "Set - Spidey Gem", "id": "680e-ab3b-8fce-33dd", "hidden": false},
+      {"name": "Set - Spidey Tactic", "id": "3cc8-df36-a590-959b", "hidden": false},
+      {"name": "Set - XMen Crisis", "id": "e90e-5e69-79ef-61b0", "hidden": false},
+      {"name": "Set - XMen Gem", "id": "d06c-7214-8931-55a5", "hidden": false},
+      {"name": "Set - XMen Tactic", "id": "c49c-152c-b64a-3450", "hidden": false},
+      {"name": "Set - XMen2 Crisis", "id": "f600-d032-ecee-709b", "hidden": false},
+      {"name": "Set - XMen2 Gem", "id": "0c60-4b55-c63a-76ee", "hidden": false},
+      {"name": "Set - XMen2 One-Shot", "id": "7ae3-1b16-cb4d-39a5", "hidden": false},
+      {"name": "Set - XMen2 Tactic", "id": "63ae-a2af-e912-f2bb", "hidden": false},
+      {"name": "Spider-Foes", "id": "71ff-5d57-e3a0-5322", "hidden": false},
+      {"name": "Team Tactics", "id": "d643-5175-ae87-9385", "hidden": false},
+      {"name": "Team Tactics Cards", "id": "7de0-86ce-229b-637e", "hidden": false},
+      {"name": "Thralls of Dracula", "id": "6017-2764-96a5-5bc3", "hidden": false},
+      {"name": "Unaffiliated", "id": "8ded-f44e-e059-108b", "hidden": false},
+      {"name": "Uncanny X-Men", "id": "60b3-f8b0-e59a-faca", "hidden": false},
+      {"name": "Wakanda", "id": "f26a-4939-f603-307c", "hidden": false},
+      {"name": "Weapon X", "id": "3fcf-8ffb-d039-d614", "hidden": false},
+      {"name": "Web Warriors", "id": "d7f0-71df-050d-5c5e", "hidden": false},
+      {"name": "Winter Guard", "id": "b5a7-c6a5-ae6f-29ba", "hidden": false},
+      {"name": "X-Force", "id": "3d7a-617a-f22e-cec6", "hidden": false}
+    ],
+    "costTypes": [{"name": " Threat Level", "id": "2de3-a5e2-23d8-2859", "defaultCostLimit": -1, "hidden": false}],
+    "forceEntries": [
+      {
+        "name": "Roster - Open Play",
+        "id": "3a4a-aa25-5bf6-e2ce",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Game Rules",
+            "id": "d28e-4cf5-b683-bd30",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "b03c-862f-56fc-c15d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "c75f-2d9c-e0cd-0121",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "a519-5d93-460a-05f5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "2709-4d17-be80-4227",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "b849-5d38-3935-6543", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {"name": "Grunts", "id": "8c08-fa6e-66b7-bc11", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "640e-1632-a228-d563",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "acfa-1013-a74f-1fd5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "401a-47c6-1b36-d8a5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "e9a8-a8de-36c2-2d4f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "9dfc-2479-8655-b9b6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "374f-44c6-ed12-f111",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "45c8-d320-de69-5dee", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {"name": "Infinity Gems", "id": "99db-e574-d8c7-fd0b", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Team Tactics",
+            "id": "9a27-e692-c51a-7013",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "66a9-8bc3-cb6b-b689",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "859c-650e-244f-40c7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "db5a-01c9-3f02-df9a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "min",
+                "value": 10
+              },
+              {
+                "id": "eab7-ec3c-6ccf-52bd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "3a4a-aa25-5bf6-e2ce",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Roster - Timeline Extended",
+        "id": "769c-d9fa-1613-b8ce",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Banned - Timeline Extended",
+            "id": "0de6-84cd-17ad-35f5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "355f-6ff7-a74b-ef4e",
+            "constraints": [
+              {
+                "id": "e2d4-c4d1-dc97-710f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "dcb9-7e99-6692-d5f5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "6e20-ad82-0950-3676",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "7af8-a22c-9cd5-9522",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "fd63-d3d8-8255-0279", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "7cf5-20e1-2c7e-a5a2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "fad2-f83b-c57a-32c4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "713c-e91b-cd33-d4e4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "1d16-e9d8-685e-139d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "8749-6ad4-df29-6102",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "b75c-e303-a726-b2b5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "35a3-ea70-e727-8e55", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {
+            "name": "Game Rules",
+            "id": "c4bc-792d-11c4-73f8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "9dbd-5fe6-6436-7469",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Grunts", "id": "c2cf-3fbd-7774-dc48", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {"name": "Infinity Gems", "id": "cf14-f2ae-d12f-3b46", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Restricted - Timeline Extended",
+            "id": "d32d-99cd-75eb-2fb9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "37b0-7fc2-32e0-345f",
+            "constraints": [
+              {
+                "id": "f958-13f1-dcd3-752c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {"name": "Set - City Crisis", "id": "2d9a-fbf5-8de5-e80c", "hidden": false, "primary": false, "targetId": "c979-e2ae-244c-cb8b"},
+          {"name": "Set - City Gem", "id": "1394-11f0-e32c-dc3d", "hidden": false, "primary": false, "targetId": "0e17-e603-4d9b-981f"},
+          {"name": "Set - City Tactic", "id": "8721-0ca6-6304-178a", "hidden": false, "primary": false, "targetId": "45bd-7f44-9608-4abe"},
+          {"name": "Set - Flup Crisis", "id": "eb96-0c48-3dbc-818f", "hidden": false, "primary": false, "targetId": "e5bc-27a3-d353-54a3"},
+          {"name": "Set - Flup Gem", "id": "2007-9146-3252-7367", "hidden": false, "primary": false, "targetId": "46a3-b3fb-46ae-4a0e"},
+          {"name": "Set - Flup Tactic", "id": "2e73-0a42-d125-002c", "hidden": false, "primary": false, "targetId": "5702-4196-97f0-695a"},
+          {"name": "Set - Hammer Crisis", "id": "7ca7-c0a8-7b57-7eaa", "hidden": false, "primary": false, "targetId": "7cdf-3645-3a8a-067b"},
+          {"name": "Set - Hammer Gem", "id": "b465-a6d7-d934-8367", "hidden": false, "primary": false, "targetId": "24e0-2c06-1601-09a4"},
+          {"name": "Set - Hammer Tactic", "id": "9f7e-7d20-7cfd-4f5e", "hidden": false, "primary": false, "targetId": "45e3-39e2-340b-9e14"},
+          {"name": "Set - Spidey Crisis", "id": "77d9-bff1-1604-a05a", "hidden": false, "primary": false, "targetId": "baa7-603b-44e2-95ac"},
+          {"name": "Set - Spidey Gem", "id": "b3e5-61e3-391e-244b", "hidden": false, "primary": false, "targetId": "680e-ab3b-8fce-33dd"},
+          {"name": "Set - Spidey Tactic", "id": "1ec5-9735-08aa-a31b", "hidden": false, "primary": false, "targetId": "3cc8-df36-a590-959b"},
+          {"name": "Set - XMen Crisis", "id": "4add-fc95-c1e3-66bf", "hidden": false, "primary": false, "targetId": "e90e-5e69-79ef-61b0"},
+          {"name": "Set - XMen Gem", "id": "4a27-6227-ff9d-85d9", "hidden": false, "primary": false, "targetId": "d06c-7214-8931-55a5"},
+          {"name": "Set - XMen Tactic", "id": "73cb-35b7-05b2-1d73", "hidden": false, "primary": false, "targetId": "c49c-152c-b64a-3450"},
+          {"name": "Set - XMen2 Crisis", "id": "39af-61e2-d3a0-5fbd", "hidden": false, "primary": false, "targetId": "f600-d032-ecee-709b"},
+          {"name": "Set - XMen2 Gem", "id": "c08a-3c2b-fcbd-8fd8", "hidden": false, "primary": false, "targetId": "0c60-4b55-c63a-76ee"},
+          {"name": "Set - XMen2 Tactic", "id": "b9a6-08e9-0395-9724", "hidden": false, "primary": false, "targetId": "63ae-a2af-e912-f2bb"},
+          {
+            "name": "Team Tactics",
+            "id": "02e4-de9e-feff-3afd",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "edf0-64ef-31a7-8334",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "02e4-d086-ff41-44a8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "0800-bd6d-4833-1061",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "min",
+                "value": 10
+              },
+              {
+                "id": "eefb-768c-f7bb-8fde",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "769c-d9fa-1613-b8ce",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Roster - Timeline Standard",
+        "id": "d091-5be8-a8a4-8f52",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Banned - Timeline Standard",
+            "id": "49c1-4e01-c74f-0204",
+            "hidden": false,
+            "primary": false,
+            "targetId": "56eb-0892-4cc1-4962",
+            "constraints": [
+              {
+                "id": "82f3-ce4c-8071-b4a5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "4f66-1079-b42a-7267",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "982f-cc82-c978-463c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "37d8-4166-9b24-71dc",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "e6da-2e1b-98a9-526f", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "d7cf-23b7-e7f4-4ba6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "0d95-ae86-3953-f4a4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "ef38-e0a9-a24c-e9fc",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "3a53-3f63-6944-1fa3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "1100-56f6-1d4d-819d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "1722-74e5-67dd-31a3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "61e4-feff-8177-7e01", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {
+            "name": "Game Rules",
+            "id": "05fe-2407-2302-81f4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "dbd7-e233-c38d-2511",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Grunts", "id": "4664-959f-4243-44eb", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {"name": "Infinity Gems", "id": "78cb-fe2f-1e19-4d8d", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Restricted - Timeline Standard",
+            "id": "916e-5673-ad0b-69c0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3351-762c-1152-6a79",
+            "constraints": [
+              {
+                "id": "ab01-cb71-0f60-2ea6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Set - City Crisis",
+            "id": "7dd7-2596-8358-fe8e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c979-e2ae-244c-cb8b",
+            "constraints": [
+              {
+                "id": "c351-84d9-49d1-c832",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - City Gem",
+            "id": "b3ac-b9e0-4cae-0582",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0e17-e603-4d9b-981f",
+            "constraints": [
+              {
+                "id": "8883-8906-c18f-f004",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - City Tactic", "id": "7dfa-118e-a5a1-71d4", "hidden": false, "primary": false, "targetId": "45bd-7f44-9608-4abe"},
+          {"name": "Set - Flup Crisis", "id": "9742-dbc9-b163-8f80", "hidden": false, "primary": false, "targetId": "e5bc-27a3-d353-54a3"},
+          {
+            "name": "Set - Flup Gem",
+            "id": "729d-3af3-9f5b-1e4d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "46a3-b3fb-46ae-4a0e",
+            "constraints": [
+              {
+                "id": "d627-cf94-bb8d-723d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Flup Tactic",
+            "id": "301c-965d-ec47-1099",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5702-4196-97f0-695a",
+            "constraints": [
+              {
+                "id": "9ca5-d86f-d8bd-0055",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Hammer Crisis",
+            "id": "ae19-99c1-379a-7552",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7cdf-3645-3a8a-067b",
+            "constraints": [
+              {
+                "id": "fdf7-4931-4270-9907",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - Hammer Gem", "id": "9201-e06c-2494-bdba", "hidden": false, "primary": false, "targetId": "24e0-2c06-1601-09a4"},
+          {"name": "Set - Hammer Tactic", "id": "f1c8-bb8f-2712-a183", "hidden": false, "primary": false, "targetId": "45e3-39e2-340b-9e14"},
+          {
+            "name": "Set - Spidey Crisis",
+            "id": "b15a-af00-25b4-5f10",
+            "hidden": false,
+            "primary": false,
+            "targetId": "baa7-603b-44e2-95ac",
+            "constraints": [
+              {
+                "id": "a2f1-997f-8dfa-1813",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Spidey Gem",
+            "id": "5c2e-87fb-152e-b25d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "680e-ab3b-8fce-33dd",
+            "constraints": [
+              {
+                "id": "0db5-fc46-cc56-11e8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Spidey Tactic",
+            "id": "0dbf-5372-1f22-f62b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3cc8-df36-a590-959b",
+            "constraints": [
+              {
+                "id": "710a-4ffe-4b85-e903",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen Crisis",
+            "id": "b42f-6f77-2504-1691",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e90e-5e69-79ef-61b0",
+            "constraints": [
+              {
+                "id": "77a3-ee2b-509a-b78c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen Gem",
+            "id": "d219-81cb-e3ac-cdee",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d06c-7214-8931-55a5",
+            "constraints": [
+              {
+                "id": "4879-5134-8767-87da",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - XMen Tactic", "id": "8a48-6b6a-8342-f2ac", "hidden": false, "primary": false, "targetId": "c49c-152c-b64a-3450"},
+          {
+            "name": "Set - XMen2 Crisis",
+            "id": "70fa-c354-156b-ccb0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "f600-d032-ecee-709b",
+            "constraints": [
+              {
+                "id": "78b8-5eb0-e4ce-f0b8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen2 Gem",
+            "id": "b113-6bca-b9bb-84f9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0c60-4b55-c63a-76ee",
+            "constraints": [
+              {
+                "id": "8425-01a6-c51a-7b8a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - XMen2 Tactic", "id": "5cd3-3151-234c-1c57", "hidden": false, "primary": false, "targetId": "63ae-a2af-e912-f2bb"},
+          {
+            "name": "Team Tactics",
+            "id": "4484-2498-f812-1fbf",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "05a8-e54d-94f6-0196",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "4ba0-79c7-6698-8337",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "10f9-7bcc-f614-bf87",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "min",
+                "value": 10
+              },
+              {
+                "id": "0960-c55f-cb1d-06c4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "d091-5be8-a8a4-8f52",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Squad - Open Play",
+        "id": "6410-8f39-4ae6-85fa",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Game Rules",
+            "id": "e88b-9862-a6b1-88d6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "f6a4-9cb9-6626-8159",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "7a3b-d9f7-3ca3-afc7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "4808-2be4-bc86-a8ad",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "29ea-1374-1a9e-f93e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "8ec3-4efd-3cde-6caf", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {"name": "Grunts", "id": "305c-a1ad-03c6-435d", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "36d8-6da4-96bd-7ff8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "d5d1-e3cc-e911-54cf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "c4e1-ef9c-c5b9-c82e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "7d90-6ffd-ebfd-4e73",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "5fae-c721-bf9c-cf1c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "84a4-cc34-b5f6-29af",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "f529-3d5e-92a9-c2d7", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {"name": "Infinity Gems", "id": "9ccd-0b02-f6e0-7436", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Team Tactics",
+            "id": "d7b1-6c79-5ebb-55f7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "8ba5-6a51-5d9d-468f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "47e0-f15a-341d-1ea9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "69d5-6897-b6e0-7187",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "min",
+                "value": 5
+              },
+              {
+                "id": "b4b0-e8a4-7c2c-6e0a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "6410-8f39-4ae6-85fa",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Squad - Timeline Extended",
+        "id": "7bbb-0b8c-189c-73ab",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Banned - Timeline Extended",
+            "id": "5b6b-af4c-71c7-d3ae",
+            "hidden": false,
+            "primary": false,
+            "targetId": "355f-6ff7-a74b-ef4e",
+            "constraints": [
+              {
+                "id": "ed57-e1db-b3ca-0d3f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "2cc0-0325-d561-80ec",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "00ac-45f4-af73-68b2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4f79-a6b3-36cc-ff07",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "4d1f-81ac-2574-415c", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "1f5e-01c2-5359-409b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "879b-b9e8-d49c-c819",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "645f-b375-768b-be57",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "e3cc-c894-91cd-fd4d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "e88a-2454-ab68-f5d9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4923-d95f-4c34-c6ee",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "aa92-e6f7-2118-3e1b", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {
+            "name": "Game Rules",
+            "id": "8ee7-5098-bac0-cb03",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "dd1d-d3d8-cd83-aa52",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Grunts", "id": "26d4-f215-b4cc-a127", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {"name": "Infinity Gems", "id": "68ce-4622-6456-1265", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Restricted - Timeline Extended",
+            "id": "59a0-c42f-458a-2dfe",
+            "hidden": false,
+            "primary": false,
+            "targetId": "37b0-7fc2-32e0-345f",
+            "constraints": [
+              {
+                "id": "acc9-4952-3145-f446",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {"name": "Set - City Crisis", "id": "14ca-5b14-29e0-ad3f", "hidden": false, "primary": false, "targetId": "c979-e2ae-244c-cb8b"},
+          {"name": "Set - City Gem", "id": "7cbb-fbc0-5dfc-e143", "hidden": false, "primary": false, "targetId": "0e17-e603-4d9b-981f"},
+          {"name": "Set - City Tactic", "id": "81dd-74d3-7e23-c718", "hidden": false, "primary": false, "targetId": "45bd-7f44-9608-4abe"},
+          {"name": "Set - Flup Crisis", "id": "34e5-28b9-b44a-a381", "hidden": false, "primary": false, "targetId": "e5bc-27a3-d353-54a3"},
+          {"name": "Set - Flup Gem", "id": "91d2-9902-a4ee-0eb2", "hidden": false, "primary": false, "targetId": "46a3-b3fb-46ae-4a0e"},
+          {"name": "Set - Flup Tactic", "id": "9abc-976b-d534-f653", "hidden": false, "primary": false, "targetId": "5702-4196-97f0-695a"},
+          {"name": "Set - Hammer Crisis", "id": "0150-8f9e-eba9-9c9d", "hidden": false, "primary": false, "targetId": "7cdf-3645-3a8a-067b"},
+          {"name": "Set - Hammer Gem", "id": "8af2-2074-6896-1bbd", "hidden": false, "primary": false, "targetId": "24e0-2c06-1601-09a4"},
+          {"name": "Set - Hammer Tactic", "id": "a06d-2d0e-04ec-be81", "hidden": false, "primary": false, "targetId": "45e3-39e2-340b-9e14"},
+          {"name": "Set - Spidey Crisis", "id": "3de4-96dd-918d-6737", "hidden": false, "primary": false, "targetId": "baa7-603b-44e2-95ac"},
+          {"name": "Set - Spidey Gem", "id": "22c8-01e7-55fb-a1d4", "hidden": false, "primary": false, "targetId": "680e-ab3b-8fce-33dd"},
+          {"name": "Set - Spidey Tactic", "id": "3838-774e-d2c1-7226", "hidden": false, "primary": false, "targetId": "3cc8-df36-a590-959b"},
+          {"name": "Set - XMen Crisis", "id": "4855-33d8-e442-0560", "hidden": false, "primary": false, "targetId": "e90e-5e69-79ef-61b0"},
+          {"name": "Set - XMen Gem", "id": "4d45-ff5a-3a05-f833", "hidden": false, "primary": false, "targetId": "d06c-7214-8931-55a5"},
+          {"name": "Set - XMen Tactic", "id": "e197-f76f-a8cf-7c2d", "hidden": false, "primary": false, "targetId": "c49c-152c-b64a-3450"},
+          {"name": "Set - XMen2 Crisis", "id": "d861-13d7-6e6b-87c2", "hidden": false, "primary": false, "targetId": "f600-d032-ecee-709b"},
+          {"name": "Set - XMen2 Gem", "id": "ee7f-6f9b-e470-74f9", "hidden": false, "primary": false, "targetId": "0c60-4b55-c63a-76ee"},
+          {"name": "Set - XMen2 Tactic", "id": "d286-5483-64cd-7db2", "hidden": false, "primary": false, "targetId": "63ae-a2af-e912-f2bb"},
+          {
+            "name": "Team Tactics",
+            "id": "a4d1-9f49-c2ff-faf6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "afb1-5584-7e2f-d336",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "db5b-a80d-a7e2-14ea",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "a6a5-d3b2-f105-50c2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "min",
+                "value": 5
+              },
+              {
+                "id": "d394-9920-598e-6b67",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "7bbb-0b8c-189c-73ab",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Squad - Timeline Standard",
+        "id": "d631-c89c-47d6-ec9e",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Banned - Timeline Standard",
+            "id": "beb3-c1b9-17c8-5789",
+            "hidden": false,
+            "primary": false,
+            "targetId": "56eb-0892-4cc1-4962",
+            "constraints": [
+              {
+                "id": "bba2-523c-2851-e7ca",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Character",
+            "id": "4cb0-0d70-69ea-6c27",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b2c6-4f4b-967e-2218",
+            "constraints": [
+              {
+                "id": "2fdd-6091-7460-6242",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "a24d-8ca5-9210-dcb4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ]
+          },
+          {"name": "Characters", "id": "6b01-9942-62f4-ab5e", "hidden": false, "primary": false, "targetId": "5c80-c1cf-82bb-b5de"},
+          {
+            "name": "Crisis - Extraction",
+            "id": "1f49-43bd-e8b5-886c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "67a0-a10a-a572-55c8",
+            "constraints": [
+              {
+                "id": "3ef1-db68-3caa-476a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "dde2-64fb-9b4d-fd7a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Crisis - Secure",
+            "id": "ede4-be3c-5779-cadc",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75ba-74ce-7452-509c",
+            "constraints": [
+              {
+                "id": "1035-8e1b-0589-7c8c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5d51-1285-da23-a440",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Crisis Cards", "id": "ff0e-05d5-ebbe-905d", "hidden": false, "primary": false, "targetId": "b9d7-42e4-5e93-7858"},
+          {
+            "name": "Game Rules",
+            "id": "2b80-cfc9-3e7d-0141",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c34e-b4ff-8bc1-6216",
+            "constraints": [
+              {
+                "id": "ab4e-5049-6b6d-8ac9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Grunts", "id": "a2e4-fe2a-f218-6b47", "hidden": false, "primary": false, "targetId": "efe0-86c9-4b57-7046"},
+          {"name": "Infinity Gems", "id": "148d-b5c5-ce3e-b72a", "hidden": false, "primary": false, "targetId": "e7d2-fc4f-e67b-f877"},
+          {
+            "name": "Restricted - Timeline Standard",
+            "id": "c9c3-4b51-6b9a-40c6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3351-762c-1152-6a79",
+            "constraints": [
+              {
+                "id": "958d-5341-df05-0d68",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Set - City Crisis",
+            "id": "7765-51d9-76b2-30e2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c979-e2ae-244c-cb8b",
+            "constraints": [
+              {
+                "id": "3809-3f37-45a0-e401",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - City Gem",
+            "id": "96d2-45de-2797-11c6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0e17-e603-4d9b-981f",
+            "constraints": [
+              {
+                "id": "4b45-96a4-812e-ce2e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - City Tactic", "id": "9980-f3ea-c9d1-e9f2", "hidden": false, "primary": false, "targetId": "45bd-7f44-9608-4abe"},
+          {"name": "Set - Flup Crisis", "id": "ed4f-68c1-d947-4568", "hidden": false, "primary": false, "targetId": "e5bc-27a3-d353-54a3"},
+          {
+            "name": "Set - Flup Gem",
+            "id": "2849-2050-bf7b-8838",
+            "hidden": false,
+            "primary": false,
+            "targetId": "46a3-b3fb-46ae-4a0e",
+            "constraints": [
+              {
+                "id": "572a-083e-7188-23f1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Flup Tactic",
+            "id": "2d0b-5cd2-f779-365b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5702-4196-97f0-695a",
+            "constraints": [
+              {
+                "id": "ee5f-388d-d68b-28f7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Hammer Crisis",
+            "id": "d876-a33d-6116-0b13",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7cdf-3645-3a8a-067b",
+            "constraints": [
+              {
+                "id": "67bc-5824-3708-6b33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - Hammer Gem", "id": "66b5-dc74-b07b-9310", "hidden": false, "primary": false, "targetId": "24e0-2c06-1601-09a4"},
+          {"name": "Set - Hammer Tactic", "id": "6e91-8fff-3f42-9b00", "hidden": false, "primary": false, "targetId": "45e3-39e2-340b-9e14"},
+          {
+            "name": "Set - Spidey Crisis",
+            "id": "3ca3-d1a9-3c78-3de3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "baa7-603b-44e2-95ac",
+            "constraints": [
+              {
+                "id": "ba17-3097-fb9c-0e44",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Spidey Gem",
+            "id": "5837-52a7-3b39-4204",
+            "hidden": false,
+            "primary": false,
+            "targetId": "680e-ab3b-8fce-33dd",
+            "constraints": [
+              {
+                "id": "40ad-1eeb-e747-39de",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - Spidey Tactic",
+            "id": "035c-a3d8-a9d6-3435",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3cc8-df36-a590-959b",
+            "constraints": [
+              {
+                "id": "8e8b-cfdd-c003-dd35",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen Crisis",
+            "id": "b85d-d9e7-8878-93c5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e90e-5e69-79ef-61b0",
+            "constraints": [
+              {
+                "id": "c9fa-2676-bbc4-913c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen Gem",
+            "id": "e9a3-5194-5c9e-d12e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d06c-7214-8931-55a5",
+            "constraints": [
+              {
+                "id": "3897-0f48-439b-d5ac",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - XMen Tactic", "id": "822b-0544-4de3-1240", "hidden": false, "primary": false, "targetId": "c49c-152c-b64a-3450"},
+          {
+            "name": "Set - XMen2 Crisis",
+            "id": "c767-bd21-461a-d8af",
+            "hidden": false,
+            "primary": false,
+            "targetId": "f600-d032-ecee-709b",
+            "constraints": [
+              {
+                "id": "6a9e-d34f-9038-d96c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Set - XMen2 Gem",
+            "id": "f44d-e99b-66a3-7a5a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0c60-4b55-c63a-76ee",
+            "constraints": [
+              {
+                "id": "914f-b634-9bc1-dccb",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ]
+          },
+          {"name": "Set - XMen2 Tactic", "id": "93ca-d8d1-beea-af3d", "hidden": false, "primary": false, "targetId": "63ae-a2af-e912-f2bb"},
+          {
+            "name": "Team Tactics",
+            "id": "a208-7309-2290-1d37",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d643-5175-ae87-9385",
+            "constraints": [
+              {
+                "id": "7213-5d1e-df5f-5b5a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Team Tactics Cards",
+            "id": "ee3c-6b2a-ca16-6acd",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7de0-86ce-229b-637e",
+            "constraints": [
+              {
+                "id": "552b-aa70-aa64-41bf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "min",
+                "value": 5
+              },
+              {
+                "id": "d03c-3ac5-53ee-f1d3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "d631-c89c-47d6-ec9e",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "    Character",
+        "id": "fde4-96d9-2028-2529",
+        "characteristicTypes": [
+          {"name": "Stamina", "id": "c7b5-640e-9689-f363"},
+          {"name": "Speed", "id": "ba74-030d-982e-7e70"},
+          {"name": "Size", "id": "40df-7d54-a856-5953"},
+          {"name": "Threat", "id": "b915-b25f-cb12-b651"},
+          {"name": "Physical Defense", "id": "61c4-a32c-74b4-b335"},
+          {"name": "Energy Defense", "id": "0509-5c52-7571-39ad"},
+          {"name": "Mystic Defense", "id": "0c10-28cd-4926-f292"}
+        ]
+      },
+      {
+        "name": "   Attacks",
+        "id": "f568-1385-4cbb-d16b",
+        "characteristicTypes": [
+          {"name": "Type", "id": "4fe1-64e5-293e-f679"},
+          {"name": "Range", "id": "30a7-a2d1-0001-e2a2"},
+          {"name": "Strength", "id": "8341-b3f5-ecc1-0834"},
+          {"name": "Cost", "id": "711d-c2bc-e2d4-f398"},
+          {"name": "Special Rules", "id": "1bfb-9dd5-42c1-6beb"}
+        ]
+      },
+      {"name": "   Leadership", "id": "aa85-0b33-2742-db0e", "characteristicTypes": [{"name": "Special Rules", "id": "c95d-3ead-781d-3833"}]},
+      {
+        "name": "  Active Superpowers",
+        "id": "d5f9-5644-9781-fb49",
+        "characteristicTypes": [{"name": "Type", "id": "f37d-f045-0646-cf61"}, {"name": "Cost", "id": "2b18-3d86-a415-5584"}, {"name": "Special Rules", "id": "bc31-0d0b-18f2-a6ef"}]
+      },
+      {
+        "name": "  Reactive Superpowers",
+        "id": "5648-8d63-d440-21b0",
+        "characteristicTypes": [{"name": "Type", "id": "f59f-a16c-8938-4be1"}, {"name": "Cost", "id": "3a1f-904d-3b3e-abfb"}, {"name": "Special Rules", "id": "e05d-5a10-9d52-550c"}]
+      },
+      {
+        "name": " Innate Superpowers",
+        "id": "6b81-fb1a-574f-32e2",
+        "characteristicTypes": [{"name": "Type", "id": "e9b9-de48-7a91-1e15"}, {"name": "Cost", "id": "f183-829f-8371-8b7c"}, {"name": "Special Rules", "id": "052f-28a4-12f9-0691"}]
+      },
+      {
+        "name": "Crisis",
+        "id": "e274-6fe8-7f95-a012",
+        "characteristicTypes": [
+          {"name": "Type", "id": "99b3-ec42-38d9-2d3a"},
+          {"name": "Threat", "id": "3561-4e9e-55ca-a37d"},
+          {"name": "Setup", "id": "7116-4232-08b5-42bc"},
+          {"name": "Scoring", "id": "81f5-e239-dd2d-2b7c"},
+          {"name": "Details", "id": "fc23-59e6-7090-77fa"},
+          {"name": "Set", "id": "7f1d-2583-eaf2-10ff"}
+        ]
+      },
+      {"name": "Horsemen Card", "id": "1af7-0ac7-4ace-8863", "characteristicTypes": [{"name": "Description", "id": "292f-5ce8-01e5-fd58"}]},
+      {
+        "name": "Infinity Gem",
+        "id": "08c5-f8c2-0bfe-8bab",
+        "characteristicTypes": [
+          {"name": "Threat", "id": "7b62-cfc6-5ac5-5df5"},
+          {"name": "Type", "id": "8fc1-cd21-57e8-aa34"},
+          {"name": "Cost", "id": "728e-e299-5ab5-c7ae"},
+          {"name": "Rules", "id": "4338-8264-f993-6b14"},
+          {"name": "Set", "id": "5689-ade5-a287-7087"}
+        ]
+      },
+      {
+        "name": "One-Shot",
+        "id": "6e60-06f4-84dd-44f8",
+        "characteristicTypes": [
+          {"name": "Threat", "id": "87ab-2189-4743-0722"},
+          {"name": "Description", "id": "6d49-5ac8-29c0-c21f"},
+          {"name": "Setup", "id": "e890-d7b7-97b5-e708"},
+          {"name": "Rules", "id": "ac5f-7cbd-2584-2858"},
+          {"name": "Set", "id": "c919-28b7-7096-5e8c"}
+        ]
+      },
+      {"name": "Special Conditions", "id": "814b-cbd0-8af2-895f", "characteristicTypes": [{"name": "Special Rules", "id": "6532-3aa9-58e3-43f6"}]},
+      {"name": "Symbol", "id": "7659-1ab3-23f3-7c64", "characteristicTypes": [{"name": "Description", "id": "8fd3-ce00-57ad-8474"}]},
+      {
+        "name": "Team Tactics",
+        "id": "1114-24dd-beae-da80",
+        "characteristicTypes": [
+          {"name": "Affiliation", "id": "de7e-d80f-659f-c177"},
+          {"name": "Type", "id": "8155-f1de-0a5a-1f71"},
+          {"name": "Rules", "id": "3c65-5213-7979-ed33"},
+          {"name": "Set", "id": "72f3-9912-65f3-e142"}
+        ]
+      },
+      {"name": "Timeline", "id": "cd29-f16c-63fe-18db", "characteristicTypes": [{"name": "Rules and Restrictions", "id": "792a-2a7a-a6ce-20e0"}]}
+    ]
+  }
+}
