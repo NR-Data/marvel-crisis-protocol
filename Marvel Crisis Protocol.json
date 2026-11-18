@@ -79,7 +79,12 @@
       {"name": "Weapon X", "id": "3fcf-8ffb-d039-d614", "hidden": false},
       {"name": "Web Warriors", "id": "d7f0-71df-050d-5c5e", "hidden": false},
       {"name": "Winter Guard", "id": "b5a7-c6a5-ae6f-29ba", "hidden": false},
-      {"name": "X-Force", "id": "3d7a-617a-f22e-cec6", "hidden": false}
+      {"name": "X-Force", "id": "3d7a-617a-f22e-cec6", "hidden": false},
+      {"name": "Intelligencia", "id": "1fb3-3383-b290-4772", "hidden": false},
+      {"name": "Mighty Avengers", "id": "8c02-48de-04ff-4cd6", "hidden": false},
+      {"name": "Thunderbolts", "id": "8fe5-53b9-f701-41ad", "hidden": false},
+      {"name": "X-Factor", "id": "4da7-03ac-2f25-4388", "hidden": false},
+      {"name": "Young Avengers", "id": "9613-b14d-7c41-4a8d", "hidden": false}
     ],
     "costTypes": [{"name": " Threat Level", "id": "2de3-a5e2-23d8-2859", "defaultCostLimit": -1, "hidden": false}],
     "forceEntries": [
